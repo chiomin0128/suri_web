@@ -820,32 +820,99 @@
 }
 
 .footer {
-  padding: 44px 0 56px;
+  position: relative;
+  padding: 56px 0 36px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(232, 238, 255, 0.46) 100%),
+    #fdfdff;
 }
 
 .footer__inner {
   display: grid;
   gap: 18px;
-  padding-top: 16px;
-  border-top: 1px solid var(--color-line);
+  padding: 24px;
+  border: 1px solid var(--color-line);
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+  box-shadow: 0 16px 32px rgba(17, 24, 39, 0.08);
 }
 
 .footer__brand p {
   margin: 12px 0 0;
   color: var(--color-muted-text);
   font-size: 0.92rem;
+  line-height: 1.6;
 }
 
-.footer__links {
+.footer__mail {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 14px;
+  min-height: 38px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--color-line);
+  background: #ffffff;
+  color: #425272;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.footer__grid {
+  display: grid;
+  gap: 12px;
+}
+
+.footer__column {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--color-line);
+  background: #fff;
+}
+
+.footer__column-title {
+  color: var(--color-primary);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer__column a {
+  color: #4f5e7c;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.footer__column--highlight {
+  background: linear-gradient(160deg, #f7f9ff 0%, #edf2ff 100%);
+}
+
+.footer__column--highlight p {
+  margin: 0;
+  color: var(--color-muted-text);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.footer__cta {
+  min-height: 44px;
+  padding: 0 16px;
+  justify-self: start;
+}
+
+.footer__bottom {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer__links a {
-  color: var(--color-muted-text);
-  font-size: 0.9rem;
-  font-weight: 600;
+  justify-content: space-between;
+  gap: 10px 18px;
+  margin-top: 12px;
+  color: #6b7690;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .reveal {
@@ -1021,13 +1088,13 @@
   }
 
   .footer__inner {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: end;
-    gap: 24px;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+    align-items: start;
+    gap: 20px;
   }
 
-  .footer__links {
-    justify-content: flex-end;
+  .footer__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

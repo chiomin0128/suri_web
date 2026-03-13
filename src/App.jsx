@@ -571,14 +571,41 @@ function App() {
               </span>
             </a>
             <p>AI로 더 쉬워진 주택 수리 서비스, 수리모아.</p>
+            <a className="footer__mail" href="mailto:chiomin0128@gmail.com">
+              chiomin0128@gmail.com
+            </a>
           </div>
 
-          <div className="footer__links">
-            <a href="#home">회사 소개</a>
-            <a href="#contact">개인정보처리방침</a>
-            <a href="#contact">이용약관</a>
-            <a href="mailto:chiomin0128@gmail.com">Contact</a>
+          <div className="footer__grid">
+            <div className="footer__column">
+              <span className="footer__column-title">바로가기</span>
+              <a href="#service">서비스</a>
+              <a href="#solution">솔루션</a>
+              <a href="#pricing">가격</a>
+              <a href="#partners">파트너</a>
+            </div>
+
+            <div className="footer__column">
+              <span className="footer__column-title">회사 정보</span>
+              <a href="#home">회사 소개</a>
+              <a href="#contact">개인정보처리방침</a>
+              <a href="#contact">이용약관</a>
+              <a href="mailto:chiomin0128@gmail.com">Contact</a>
+            </div>
+
+            <div className="footer__column footer__column--highlight">
+              <span className="footer__column-title">사전 신청</span>
+              <p>관리 SaaS 오픈 소식을 가장 먼저 받아보세요.</p>
+              <a className="button button--secondary footer__cta" href="#cta">
+                오픈 알림 신청
+              </a>
+            </div>
           </div>
+        </div>
+
+        <div className="container footer__bottom">
+          <span>© {new Date().getFullYear()} SuriMoa. All rights reserved.</span>
+          <span>Made for Better Housing Operations</span>
         </div>
       </footer>
     </div>
