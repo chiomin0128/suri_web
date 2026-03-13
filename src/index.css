@@ -1,26 +1,28 @@
 :root {
   font-family:
     "Pretendard",
+    "Inter",
     "Apple SD Gothic Neo",
     "Noto Sans KR",
-    system-ui,
     -apple-system,
     BlinkMacSystemFont,
+    "Segoe UI",
     sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #11192d;
+  color: #111111;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   --color-primary: #2e55ca;
-  --color-text: #11192d;
-  --color-muted-text: #5f6d88;
-  --color-background: #f6f9ff;
-  --color-line: rgba(152, 174, 224, 0.28);
-  --shadow-soft: 0 22px 52px rgba(20, 33, 77, 0.08);
-  --shadow-strong: 0 32px 80px rgba(20, 33, 77, 0.12);
+  --color-background: #f5f7fa;
+  --color-text: #111111;
+  --color-muted-text: #666666;
+  --color-accent: #e8eeff;
+  --color-line: #e5e9f2;
+  --shadow-soft: 0 12px 30px rgba(17, 24, 39, 0.08);
+  --shadow-strong: 0 18px 40px rgba(17, 24, 39, 0.14);
 }
 
 *,
@@ -31,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
@@ -38,9 +41,10 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: var(--color-text);
+  overflow-x: clip;
   background:
-    radial-gradient(circle at top left, rgba(137, 165, 255, 0.16), transparent 34%),
-    linear-gradient(180deg, #f9fbff 0%, #f3f7ff 45%, #fbfcff 100%);
+    radial-gradient(circle at top right, rgba(46, 85, 202, 0.08), transparent 32%),
+    #ffffff;
 }
 
 body,
@@ -62,11 +66,13 @@ svg {
 
 button {
   border: 0;
+  background: transparent;
+  cursor: pointer;
 }
 
 ::selection {
-  color: white;
-  background: rgba(46, 85, 202, 0.82);
+  color: #ffffff;
+  background: rgba(46, 85, 202, 0.86);
 }
 
 #root {
